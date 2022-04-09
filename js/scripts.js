@@ -13,7 +13,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 60);
+      var value = Math.round(circle.value() * 29);
       circle.setText(value);
 
     }
@@ -33,7 +33,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 254);
+      var value = Math.round(circle.value() * 17);
       circle.setText(value);
 
     }
@@ -73,7 +73,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 5423);
+      var value = Math.round(circle.value() * 75423);
       circle.setText(value);
 
     }
@@ -102,8 +102,8 @@ $( document ).ready(function() {
   // Parallax
   // setTimeout serve para carregar primeiro as imagens
   setTimeout(function() {
-    $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
-    $('#apply-area').parallax({imageSrc: 'img/pattern.png'});
+    $('#data-area').parallax({imageSrc: 'img/trophyparallax.jpg'});
+    $('#apply-area').parallax({imageSrc: 'img/pattern1.jpg'});
   }, 200);
   // Filtro do portfólio
   $('.filter-btn').on('click', function() {

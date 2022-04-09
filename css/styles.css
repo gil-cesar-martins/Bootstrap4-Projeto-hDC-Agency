@@ -1,8 +1,15 @@
 /* Gerais */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #353d41;
 }
-
+.main-title {
+    color: #65DAF9;
+    text-shadow: 1px 4px 8px #0d0f0f;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
 .row {
     margin: 0;
 }
@@ -12,9 +19,12 @@ body {
 }
 
 p, li {
-    color:#444;
+    color:#3EC1D5;
+    text-shadow: 0px 0px 1px #353d41;
     font-size: 14px;
+    hyphens: auto;
 }
+
 
 /* Barra de navegação */
 header, .navbar {
@@ -69,13 +79,16 @@ header, .navbar {
 #mainSlider .carousel-caption h2 {
     font-size: 50px;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 3px #353d41;
 }
   
 #mainSlider .carousel-caption p {
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 100px;
-    color: #FFF;
+    font-weight: 800;
+    color: #3EC1D5;
+    text-shadow: 2px 2px 3px #353d41;
 }
   
 .main-btn {
@@ -106,13 +119,6 @@ header, .navbar {
     background-color: #f9f9f9;
 }
 
-.main-title {
-    color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
-}
-
 .main-title::after {
     content: "";
     border-top: 2px solid #333;
@@ -124,7 +130,7 @@ header, .navbar {
 
 .about-title {
     font-size: 17px;
-    color: #444;
+    color: #3EC1D5;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -143,7 +149,15 @@ header, .navbar {
     margin-right: 15px;
 }
 
-/* Serviços */
+/* Títulos */
+
+#titulos h3 {
+    color: #65DAF9;
+    text-shadow: 2px 2px 3px #353d41;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
 .service-box {
     text-align: center;
     margin-bottom: 50px;
@@ -156,16 +170,19 @@ header, .navbar {
 .service-box i {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #444;
+    color: goldenrod;
+    
 }
 
 .service-box h4 {
+    color: #3EC1D5;
     font-size: 24px;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .service-box:hover > i, .service-box:hover > h4 {
-    color: #65DAF9;
+    color: goldenrod;
 }
 
 /* Dados */
@@ -180,8 +197,10 @@ header, .navbar {
 }
 
 #data-area p {
-    color: #FFF;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 6px #353d41;
     text-align: center;
+    font-weight: 700;
     font-size: 26px;
     margin-top: 20px;
 }
@@ -191,8 +210,20 @@ header, .navbar {
 .card-body {
     text-align: center;
 }
+#team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+}
 
-/* Trabalhe conosco */
+.main-title {
+    color: #65DAF9;
+    text-shadow: 2px 2px 3px #353d41;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Escolinha */
 
 #apply-area {
     height: 500px;
@@ -208,23 +239,26 @@ header, .navbar {
 }
 
 #company-img {
-    background-image: url('../img/empresa.jpg');
+    background-image: url('../img/escolinha.jpg');
     background-size: cover;
     height: 100%;
-}
-
-#pattern-img h4, #pattern-img p {
-    color: #FFF;
 }
 
 #pattern-img h4 {
     margin-top: 8%;
     margin-bottom: 20px;
     text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 2px 2px 6px #353d41;
+    font-weight: 700;
 }
 
 #pattern-img p {
+    text-align: justify;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 6px #0f13f3;
+    color: #fff;
+    font-weight: 700;
 }
 
 #apply-btn {
@@ -243,34 +277,8 @@ header, .navbar {
     background-color: #65DAF9;
 }
 
-/* Portfolio */
-.project-box {
-    margin-bottom: 30px;
-}
+/* Gráfico */
 
-#filter-btn-box {
-    margin-bottom: 50px;
-    text-align: center; 
-}
-
-#portfolio-area .filter-btn {
-    color: #444;
-    border: 1px solid #444;
-    background-color: transparent;
-    text-transform: none;
-    margin: 0 15px;
-    min-width: 100px;
-    width: auto;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-}
-
-#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
-    color: #fff;
-    background-color: #65DAF9;
-    border-color: #65DAF9;
-}
 
 /* News letter */
 
@@ -298,13 +306,13 @@ header, .navbar {
 #news-btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid #65DAF9;
+    border: 2px solid #65DAF9;
     background-color: #65DAF9;
     text-transform: uppercase;
     color: #fff;
     height: 40px;
     padding: 0 30px;
-    margin-left: -130px;
+    margin-left: -120px;
     position: absolute;
     transition: .5s;
 }
@@ -364,8 +372,8 @@ header, .navbar {
 }
 
 .contact-box i {
-    color:#444;
-    border: solid 1px #444;
+    color: goldenrod;
+    border: solid 1px #3EC1D5;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -389,7 +397,7 @@ header, .navbar {
     border-radius: 0;
 }
 #contact-form .main-btn {
-    width: 120px;
+    width: 140px;
     height: 50px;
 }
 
@@ -498,7 +506,7 @@ header, .navbar {
     }
  }
 
- @media(max-width: 425px){
+ @media(max-width: 576px){
 
     /* slider */
     #mainSlider {
@@ -515,7 +523,7 @@ header, .navbar {
     }
 
     #mainSlider .carousel-caption p {
-        display: none;
+        display:none;
     }
 
     .carousel-caption .main-btn {
@@ -570,8 +578,13 @@ header, .navbar {
         font-size: 16px;
     }
 
+    #news-btn{
+        font-size: 14px;
+    }
+
     #email-input {
         width: 74%;
+        font-size: 12px;
     }
 
     /* cta */
